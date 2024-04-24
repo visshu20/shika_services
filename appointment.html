@@ -1,0 +1,355 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oppointment</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.juid.sdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/plugins/testimonial/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/testimonial/css/owl.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container1 {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFDAB9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .italic {
+            font-style: italic;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif; /* Use a fallback font */
+            font-size: 36px; /* Set the font size */
+            color: #333; /* Set the font color */
+            margin: 0; /* Remove default margin */
+            padding: 10px; /* Add some padding */
+        }
+
+        .slot {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+            .slot:hover {
+                background-color: #e9e9e9;
+            }
+
+        button {
+            display: block;
+            width: 20%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        .required:after {
+            content: '*';
+            color: red;
+            margin-left: 3px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 300px; /* Adjust width as needed */
+            margin: 0 auto; /* This centers the div horizontally */
+            padding: 0;
+        }
+
+        /* Style for form elements */
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        label {
+            width: 100px; /* Adjust width as needed */
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%; /* Take up full width */
+            padding: 5px;
+        }
+
+        input[type="submit"] {
+            width: auto; /* Reset width for submit button */
+        }
+
+        .Center {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+
+        //function showPopup() {
+        //    var popup = document.getElementById("successPopup");
+        //    popup.style.display = "block";
+        //    setTimeout(function () {
+        //        popup.style.display = "none";
+        //    }, 2000); // Hide the popup after 2 seconds
+        //}
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container-fluid head-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 logocol">
+                        <img src="assets/images/SHIKA LOGO NEW.png" alt="">
+                        <a class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <div id="navbarNavDropdown" class="col-md-9 d-none d-md-block navcol">
+                        <ul>
+                            <li> <b>Email :</b> <a href="mailto:support@shikaservices.com">support@shikaservices.com</a></li>
+                            <li> <b>Phone :</b> 9077797778,6302498534</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr />
+
+    <div class="container1">
+        <h1 class="italic. Center" >Appointment</h1>
+        <form align="Center" id="HospitalOpBooking" method="POST">
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="Name">Name:<span class="required"></span></label>
+                    <input type="text" id="Name" name="Name" style="width: 200px; height: 30px" required>
+                </div><br />
+                <div class="form-group">
+                    <label for="email">Email:<span class="required"></span></label>
+                    <input type="Email" id="email" name="email" style="width: 200px; height: 30px" required>
+                </div><br />
+                <div class="form-group">
+                    <label for="Phone">Phone:<span class="required"></span></label>
+                    <input type="text" id="Phone" name="Phone" style="width: 200px; height: 30px" required>
+                </div><br />
+                <div class="form-group">
+                    <label for="City">City:<span class="required"></span></label>
+                    <select id="City" name="City" style="width: 200px; height: 30px" required>
+                    </select>
+                </div><br />
+                <div class="form-group">
+                    <label for="Hospital">Hospital:<span class="required"></span></label>
+                    <select id="Hospital" name="Hospital" style="width: 200px; height: 30px" required>
+                    </select>
+                </div><br />
+
+                <div class="form-group" ">
+                    <label for="Date">Date:<span class="required"></span></label>
+                    <input type="date" class="text-box" name="date" id="date">
+                </div><br />
+            </div>
+
+        </form>
+        <div>
+            <center>
+                <button type="submit" id="Hospitalsubmit">Submit</button>
+            </center>
+        </div>
+        <!--<div id="successPopup" class="popup">
+            <p>Booking Successful!</p>
+        </div>-->
+    </div>
+
+
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<!--<script src="assets/js/popper.min.js"></script>-->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/plugins/testimonial/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#HospitalOpBooking").validate({
+
+            // In 'rules' user have to specify all the  
+            // constraints for respective fields 
+            rules: {
+                Name: "required",
+                Phone: "required",
+                email: {
+                    required: true,
+                },
+                agree: "required",
+                City: "required",
+                Hospital: "required",
+                date: "required",
+
+
+            }, 
+            // In 'messages' user have to specify message as per rules 
+            messages: {
+                Name: " Please enter your name",
+                Phone: " Please enter your phone number",
+                email: {
+                    required:"Please enter your email"
+                },
+                City: " please select your city",
+                Hospital: " please select your Hospital",
+                date: " please select your date"
+
+
+
+            }
+        }); 
+        var Cities = [];
+        GetCities();
+    });
+    $(document).ready(function () {
+        $("#City").change(function () {
+            debugger;
+            var CityId = $('#City option:selected').val();
+            GetHospitals(CityId);
+
+
+        });
+
+    });
+    function GetCities() {
+        $.ajax({
+            type: 'GET',
+            dataType: "json",
+            url: "https://localhost:7143/api/Home/GetDetails",
+            success: function (data, status, xhr) {
+                $("#City").empty();
+                $('#City').append('<option value="" selected="selected">Select Citi</option>');
+                $.each(data, function (key, value) {
+                    $("#City").append($("<option>Select Citi</option>").val(data[key].id).text(data[key].name));
+                });
+            },
+            failure: function (data) {
+                alert(data.responseText);
+            }, //End of AJAX failure function
+            error: function (data) {
+                alert(data.responseText);
+            }
+        });
+
+    }
+    function GetHospitals(CityId) {
+        debugger;
+        $.ajax({
+            type: 'GET',
+            dataType: "json",
+            data: { 'CityId': CityId },
+            url: "https://localhost:7143/api/Hospital/GetDetails",
+            success: function (data) {
+                $("#Hospital").empty();;
+                $('#Hospital').append('<option value="" selected="selected">Select Hospital</option>');
+                $.each(data, function (key, value) {
+                    $("#Hospital").append($("<option></Option>").val(data[key].id).text(data[key].name));
+                });
+            },
+            failure: function (data) {
+                alert(data.responseText);
+            }, //End of AJAX failure function
+            error: function (data) {
+                alert(data.responseText);
+            }
+        });
+    };
+
+    $('#Hospitalsubmit').on('click', function () {
+        debugger;
+        // Read values from individual textboxes
+        var data = {
+            Name: $('#Name').val(),
+            email: $('#email').val(),
+            Phone: $('#Phone').val(),
+            CityId: $('#City option:selected').val(),
+            CityName: $('#City option:selected').text(),
+            HospitalsId: $('#Hospital option:selected').val(),
+            HospitalName: $('#Hospital option:selected').text(),
+            appointmentdate: $('#date').val()
+        };
+
+        $.ajax({
+            url: 'https://localhost:7143/api/Hospital/Savedetails',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (response) {
+                // Handle success
+                console.log(' added.');
+
+                $('#HospitalOpBooking')[0].reset();
+                if (!Name || !email || !Phone || !CityId || !HospitalsId || !appointmentdate)
+                {
+                    alert('Please fill in all fields.');
+                    return;
+                }
+
+            },
+           
+
+            error: function (error) {
+                // Handle error
+                console.error('Error :', error);
+            }
+        });
+
+
+    });
+
+</script>
+</html>
+
+

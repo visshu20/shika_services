@@ -1,0 +1,151 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFDAB9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .slot {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+            .slot:hover {
+                background-color: #e9e9e9;
+            }
+
+        button {
+            display: block;
+            width: 20%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+        }
+      
+
+       
+
+     
+
+      
+    </style>
+    <script>
+       
+            function showPopup() {
+            var popup = document.getElementById("successPopup");
+            popup.style.display = "block";
+            setTimeout(function() {
+                popup.style.display = "none";
+              }, 2000); // Hide the popup after 2 seconds
+            }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Laundry Booking</h1>
+        <form align="center">
+            <div class="form-group">
+                <label for="Name">Name:</label>&nbsp;
+                <input type="text" id="Name" name="Name" style="width: 200px; height:30px" required>
+            </div><br />
+            <div class="form-group">
+                <label for="Email">Email:</label>&nbsp;
+                <input type="Email" id="Email" name="Email" style="width: 200px; height:30px" required>
+            </div><br />
+            <div class="form-group">
+                <label for="Phone">Phone:</label>&nbsp;
+                <input type="text" id="Phone" name="Phone" style="width: 200px; height: 30px" required>
+            </div><br />
+
+          
+            <div class="form-group">
+                <label for="City">City:</label>&nbsp;&nbsp;&nbsp;
+                <select id="City" name="City" style="width: 200px; height: 30px" required>
+                    <option value="">Select City</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div><br />
+            <div class="form-group">
+                <label for="laundry">laundry:</label>
+                <select id="Hospital" name="Hospital" style="width: 200px; height: 30px" required>
+                    <option value="">Select Hospital</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div><br />
+            <div class="form-group">
+                <label for="washing">washing:</label>
+                <select id="washing" name="washing" style="width: 200px; height: 30px" required>
+                    <option value="">Select Doctor Name</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div><br />
+            <div class="form-group">
+                <label for="Date">Date:</label>&nbsp;&nbsp;
+                <input type="date" class="text-box" style="width: 200px; height: 30px">
+            </div><br />
+        </form>
+        <div>
+            <center>
+                <button onclick="showPopup()">Submit</button>
+            </center>
+        </div>
+        <div id="successPopup" class="popup">
+            <p>Booking Successful!</p>
+        </div>
+    </div>
+
+       
+
+
+</body>
+</html>

@@ -1,0 +1,385 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertising</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.juid.sdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/plugins/testimonial/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/testimonial/css/owl.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container1 {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFDAB9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif; /* Use a fallback font */
+            font-size: 36px; /* Set the font size */
+            color: #333; /* Set the font color */
+            margin: 0; /* Remove default margin */
+            padding: 10px; /* Add some padding */
+        }
+
+        .slot {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+            .slot:hover {
+                background-color: #e9e9e9;
+            }
+
+        button {
+            display: block;
+            width: 20%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        .required:after {
+            content: '*';
+            color: red;
+            margin-left: 3px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 300px; /* Adjust width as needed */
+            margin: 0 auto; /* This centers the div horizontally */
+            padding: 0;
+        }
+
+        /* Style for form elements */
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        label {
+            width: 100px; /* Adjust width as needed */
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%; /* Take up full width */
+            padding: 5px;
+        }
+
+        input[type="submit"] {
+            width: auto; /* Reset width for submit button */
+        }
+
+        .Center {
+            text-align: center;
+        }
+    </style>
+    <!--<script>
+
+        function showPopup() {
+            var popup = document.getElementById("successPopup");
+            popup.style.display = "block";
+            setTimeout(function () {
+                popup.style.display = "none";
+            }, 2000); // Hide the popup after 2 seconds
+        }
+    </script>-->
+</head>
+<body>
+    <header>
+        <div class="container-fluid head-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 logocol">
+                        <img src="assets/images/SHIKA LOGO NEW.png" alt="">
+                        <a class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <div id="navbarNavDropdown" class="col-md-9 d-none d-md-block navcol">
+                        <ul>
+                            <li> <b>Email :</b> <a href="mailto:support@shikaservices.com">support@shikaservices.com</a></li>
+                            <li> <b>Phone :</b> 9077797778,6302498534</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr />
+
+    <div class="container1">
+        <h1 class="italic. Center">Advertising</h1>
+        <form align="center" id="Advertisingbooking" method="POST">
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="Name">Name:<span class="required"></span></label>
+                    <input type="text" id="Name" name="Name" style="width: 200px; height:30px" required>
+                </div><br />
+                <div class="form-group">
+                    <label for="Email">Email:<span class="required"></span></label>
+                    <input type="Email" id="Email" name="Email" style="width: 200px; height:30px" required>
+                </div><br />
+                <div class="form-group">
+                    <label for="Phone">Phone:<span class="required"></span></label>
+                    <input type="text" id="Phone" name="Phone" style="width: 200px; height: 30px" required>
+                </div><br />
+
+                <div class="form-group">
+                    <label for="District">District:<span class="required"></span></label>
+                    <select id="District" name="District" style="width: 200px; height: 30px" required>
+                      
+                    </select>
+                </div><br />
+                <div class="form-group">
+                    <label for="Mandal">Mandal:</label>
+                    <select id="Mandal" name="Mandal" style="width: 200px; height: 30px" required>
+
+                    </select>
+                </div><br />
+                <div class="form-group">
+                    <label for="Village">Village:</label>
+                    <select id="Village" name="Village" style="width: 200px; height: 30px" required>
+                       
+                    </select>
+                </div><br />
+                <div class="form-group">
+                    <label for="Bikerslist">No Of Bikes:<span class="required"></span></label>
+                    <input type="text" id="Noofbikes" name="Noofbikes" style="width: 200px; height: 30px" required>
+
+                </div><br />
+
+                <!--<div class="form-group">
+                    <label for="Brand">Brand:</label>
+                    <select id="Brand" name="Brand" style="width: 200px; height: 30px" required>
+                        <option value="">Select Brand</option>
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div><br />
+                <div class="form-group">
+                    <label for="Logo">Logo:</label>
+                    <select id="Logo" name="Logo" style="width: 200px; height: 30px" required>
+                        <option value="">Select Logo</option>
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div><br />-->
+                <div class="form-group">
+                    <label for="Date">Date:<span class="required"></span></label>
+                    <input type="date"id="date" class="text-box">
+                </div><br />
+            </div>
+
+        </form>
+        <div>
+            <center>
+                <button type="submit" id="Advertisingsubmit">Submit</button>
+            </center>
+        </div>
+        <!--<div id="successPopup" class="popup">
+            <p>Booking Successful!</p>
+        </div>-->
+    </div>
+
+
+
+
+</body>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/plugins/testimonial/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#Advertisingbooking").validate({
+
+           
+        });
+        var District = [];
+        GetDistricts();
+    });
+    $(document).ready(function () {
+        $("#District").change(function () {
+            debugger;
+            var Districtid = $('#District option:selected').val();
+            GetMandals(Districtid);
+
+
+        });
+
+    });
+    $(document).ready(function () {
+        $("#Mandal").change(function () {
+            debugger;
+            var Mandalid = $('#Mandal option:selected').val();
+            GetVillage(Mandalid);
+
+
+        });
+
+    });
+    function GetDistricts() {
+        $.ajax({
+            type: 'GET',
+            dataType: "json",
+            url: "https://localhost:7143/api/Advertising/GetDetails",
+            success: function (data, status, xhr) {
+                $("#District").empty();
+                $('#District').append('<option value="" selected="selected">Select District</option>');
+                $.each(data, function (key, value) {
+                    $("#District").append($("<option>Select District</option>").val(data[key].id).text(data[key].name));
+                });
+            },
+            failure: function (data) {
+                alert(data.responseText);
+            }, //End of AJAX failure function
+            error: function (data) {
+                alert(data.responseText);
+            }
+        });
+
+    }
+    function GetMandals(Districtid) {
+        debugger;
+        $.ajax({
+            type: 'GET',
+            dataType: "json",
+            data: { 'Districtid': Districtid },
+            url: "https://localhost:7143/api/Advertising/GetMandalDetails",
+            success: function (data) {
+                $("#Mandal").empty();;
+                $('#Mandal').append('<option value="" selected="selected">Select Mandal</option>');
+                $.each(data, function (key, value) {
+                    $("#Mandal").append($("<option></Option>").val(data[key].id).text(data[key].name));
+                });
+            },
+            failure: function (data) {
+                alert(data.responseText);
+            }, //End of AJAX failure function
+            error: function (data) {
+                alert(data.responseText);
+            }
+        });
+    };
+    function GetVillage(Mandalid) {
+        debugger;
+        $.ajax({
+            type: 'GET',
+            dataType: "json",
+            data: { 'Mandalid': Mandalid },
+            url: "https://localhost:7143/api/Advertising/GetVillageDetails",
+            success: function (data) {
+                $("#Village").empty();;
+                $('#Village').append('<option value="" selected="selected">Select Village</option>');
+                $.each(data, function (key, value) {
+                    $("#Village").append($("<option></Option>").val(data[key].id).text(data[key].name));
+                });
+            },
+            failure: function (data) {
+                alert(data.responseText);
+            }, //End of AJAX failure function
+            error: function (data) {
+                alert(data.responseText);
+            }
+        });
+    };
+
+    $('#Advertisingsubmit').on('click', function () {
+        debugger;
+        // Read values from individual textboxes
+        var data = {
+            Name: $('#Name').val(),
+            Email: $('#Email').val(),
+            Phone: $('#Phone').val(),
+            DistrictId: $('#District option:selected').val(),
+            DistrictName: $('#District option:selected').text(),
+            MandalId: $('#Mandal option:selected').val(),
+            MandalName: $('#Mandal option:selected').text(),
+            VillageId: $('#Village option:selected').val(),
+            VillageName: $('#Village option:selected').text(),
+            NoOfBikes: $('#Noofbikes').val(),
+            Appointmentdate: $('#date').val()
+        };
+        $.ajax({
+            url: 'https://localhost:7143/api/Advertising/Savedetails',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (response) {
+                // Handle success
+                console.log(' added.');
+
+                $('#Advertisingbooking')[0].reset();
+                
+
+            },
+
+
+            error: function (error) {
+                // Handle error
+                console.error('Error :', error);
+            }
+        });
+    });
+
+
+</script>
+
+</html>
